@@ -1,0 +1,806 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+/* font-family: 'Inter', sans-serif; */
+
+
+@font-face {
+    font-family: "Helvetica Neue";
+	src: url("../fonts/Helvetica\ Neue\ 55\ Roman.woff2") format("woff2"), url("../fonts/Helvetica\ Neue\ 55\ Roman.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+	src: url("../fonts/Helvetica\ Neue\ Condensed\ Black.woff2") format("woff2"), url("../fonts/Helvetica\ Neue\ Condensed\ Black.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+	src: url("../fonts/Helvetica\ Neue\ Condensed\ Bold.woff2") format("woff2"), url("../fonts/Helvetica\ Neue\ Condensed\ Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+    color: #FFFFFF;
+    font-family: 'Helvetica Neue';
+    background: #1A1A1A url('../img/Main/Wallpaper/wallpaper.png') 0 0/cover no-repeat;
+}
+
+.menu::after {
+    background: #FFFFFF;
+    content: "";
+    opacity: 0.1;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 89px;
+}
+
+.menu__container {
+    display: flex;
+    column-gap: 30px;
+}
+
+.logo {
+    display: flex;
+    flex-grow: 1;
+    align-self: center;
+    column-gap: 9px;
+}
+
+.logo__icon {
+    position: relative;
+    top: -4px;
+}
+
+.menu__items {
+    display: flex;
+    column-gap: 45px;
+    text-align: left;
+}
+
+.menu__item {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 90px;
+}
+
+.menu__item:hover{
+    color: #34C759;
+    transition: 0.4ms all ease;
+}
+
+.main-titles {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    align-items: center;
+}
+
+.main-titles:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.main-titles__title {
+    font-size: 72px;
+    line-height: 84px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+}
+
+.main-titles__title span {
+    font-weight: 700;
+}
+
+.main-titles__subtitle {
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: -0.2px;
+    opacity: 0.7; 
+    max-width: 590px;
+}
+
+.main__button {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #1A1A1A;
+    background-color: #34C759;
+    border-radius: 43px;
+    padding: 25px 57px;
+    align-self: center;
+}
+
+.main__button:not(:last-child) {
+    margin-bottom: 70px;
+}
+
+.main__contacts {
+    margin-bottom: 160px;
+}
+
+.contact {
+    display: flex;
+    column-gap: 90px;
+    row-gap: 30px;
+    max-width: 915px;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+.contact__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 245px;
+}
+
+.contact__icon {
+    margin-bottom: 16px;
+    width: 18px;
+    flex: 0 1 18px;
+}
+
+.contact__info {
+    font-size: 16px;
+    line-height: 1.87;  
+}
+
+.contact__text {
+    color: #999999;
+    font-size: 14px;
+    line-height: 2.5;
+}
+
+/* .................................................................................... */
+
+.about {
+    background: #252525;
+    border-radius: 6px;
+    padding: 60px  15px 0 15px;
+    margin-bottom: 61px;
+}
+
+.about__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ....................................................................... */
+.about__titles {
+    margin-bottom: 16px;
+}
+
+.titles {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titles::after {
+    content: '';
+    background: #34C759;
+    width: 0;
+    height: 2px;
+    align-self: center;
+    transition: 0.5s all ease;
+    opacity: 0;
+}
+
+.titles:hover:after{
+    opacity: 1;
+    width: 60px;
+}
+
+.titles__title {
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 1.5;
+    letter-spacing: 0.2em;
+    color: #303030;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.titles__subtitle {
+    width: 100%;
+    letter-spacing: 0.2em;
+    color: #D9D9D9;
+    text-transform: capitalize;
+    position: absolute;
+    top: 16%;
+    left: -0.5%;
+    text-align: center;
+    font-size: 36px;
+    line-height: 2.5;
+}
+
+.titles__subtitle_size {
+    font-size: 30px;
+    line-height: 2;
+    top: 27%;
+    left: 0;
+}
+
+/* ............................................................................. */
+
+.about__text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #A6A6A6;
+    text-align: center;
+    max-width: 734px;
+} 
+
+.about__text:not(:last-child) {
+    margin-bottom: 90px;
+}
+
+.about__image {
+    display: flex;
+    gap: 34px;
+    margin-bottom: 90px;
+    flex-wrap: wrap;
+}
+
+.about__image::before {
+    content: "";
+    background: url('/img/Main/About/Arow/Arrow_left.svg') no-repeat;
+    width: 60px;
+    height: 60px;
+    align-self: center;
+    transform: translate(-50%);
+}
+
+.about__image::after {
+    content: "";
+    background: url('/img/Main/About/Arow/Arrow_right.svg') no-repeat;
+    width: 60px;
+    height: 60px;
+    align-self: center;
+    transform: translate(50%);
+}
+
+/* .............................WORK................................................... */
+
+.work:not(:last-child) {
+    margin-bottom: 93px;
+}
+
+.work__titles{
+    margin-bottom: 60px;
+}
+
+.work__items {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.work__item {
+    background: #252525;
+    padding: 24px;
+    border-radius: 6px;
+    min-height: 206px;
+    max-width: 255px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    transition: 0.3s all ease;
+}
+
+.work__item:hover {
+    background: #34C759;
+}
+
+.work__item:hover .work__title {
+    color: #191919;
+}
+
+.work__item:hover .work__title::after {
+    background: #191919;
+}
+
+.work__item:hover .work__text {
+    color: #191919;
+}
+
+.work__title {
+    font-size: 22px;
+    line-height: 1.18;
+    letter-spacing: -0.27px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    transition: 0.3s all ease;
+}
+
+.work__title::after {
+    content: "";
+    background: #34C759;
+    width: 56px;
+    height: 2px;
+    display: block;
+    margin-top: 24px;
+    transition: 0.3s all ease;
+}
+
+.work__text {
+    font-size: 13px;
+    line-height: 1.38;
+    letter-spacing: -0.16px;
+    color: #ffffff80;
+    transition: 0.3s all ease;
+}
+
+/* .............................DISHES................................................... */
+
+.dishes {
+    margin-bottom: 91px;
+}
+
+.dishes__titles {
+    margin-bottom: 60px;
+}
+
+.dishes__items {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.dishes__item {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 350px;
+    height: 100%;
+    position: relative;
+    border-radius: 6px;
+}
+
+.dishes__picture {
+    flex: 0 1 auto;
+}
+
+.dishes__arow {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+
+.dishes__content {
+    padding: 29px 30px 24px 30px;
+    background: #252525;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 6px 6px;
+}
+
+.dishes__title {
+    font-size: 32px;
+    line-height: 0.93;
+    color: #D9D9D9;
+    text-transform: capitalize;
+    margin-bottom: 1px;
+}
+
+.dishes__text {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: -0.15px;
+    color: #A4A8B2;
+    margin-bottom: 20px;
+}
+
+.dishes__choice-of {
+    font-size: 13px;
+    line-height: 1.38;
+    letter-spacing: -0.16px;
+    color: #85878C;
+    margin-bottom: 20px;
+}
+
+.dishes__grade {
+    display: flex;
+}
+
+.dishes__rating {
+    display: flex;
+    column-gap: 5px;
+    margin-right: 14px;
+    align-items: center;
+}
+
+.dishes__points {
+    flex-grow: 1;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 2.5;
+    letter-spacing: 1.5px;
+    color: #B3B3B3;
+    align-self: center;
+}
+
+.dishes__button {
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 4;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #ffffff80;
+    background: #252525;
+    outline: 2px solid #303030;
+    border-radius: 30px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    transition: 0.3s all ease;
+}
+
+.dishes__button:hover {
+    color: #252525;
+    outline: 2px solid #34C759;
+    background: #34C759;
+}
+
+/* .............................CHEFS................................................... */
+
+.shefs {
+    margin-bottom: 91px;
+}
+
+.shefs__titles {
+    margin-bottom: 37px;
+}
+
+.shefs__items {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+
+.shefs__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.shefs__body {
+    column-gap: 24px;
+    display: flex;
+}
+
+.shefs__icon {
+    flex: 0 1 auto;
+}
+
+.shefs__content {
+    align-self: center;
+}
+
+.shefs__name {
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: -0.225px;
+    margin-bottom: 6px;
+}
+
+.shefs__info {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: -0.15px;
+    color: #ffffff80;
+}
+
+.shefs__image {
+    display: flex;
+    column-gap: 30px;
+}
+
+/* .............................RECIPES................................................... */
+
+.recipes {
+    margin-bottom: 91px;
+}
+.recipes__titles {
+    margin-bottom: 60px;
+}
+
+.recipes__content {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.breakfast {
+    flex: 0 1 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("/img/Main/Recipes/breakfast.png") 0 0/cover no-repeat;
+    padding: 60px 90px;
+    border-radius: 6px;
+    min-height: 510px;
+}
+
+.breakfast__title {
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 2.5;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    background: rgb(0, 0, 0, 0.3);
+    mix-blend-mode: normal;
+    padding: 0 16.5px;
+    border-radius: 4px;
+    margin-bottom: 65px;
+}
+
+.breakfast__date {
+    font-size: 14px;
+    line-height: 2.14;
+    margin-bottom: 25px;
+}
+
+.breakfast__text {
+    font-size: 24px;
+    line-height: 1.66;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.breakfast__name {
+    font-size: 14px;
+    line-height: 2.14;
+    margin-bottom: 60px;
+}
+
+.info {
+    display: flex;
+    column-gap: 24px;
+    flex-wrap: wrap;
+}
+
+.info__item {
+    display: flex;
+    column-gap: 14px;
+}
+
+.info__number {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 2.5;
+}
+
+.recipes__items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    flex: 0 1 540px;
+}
+
+.recipes__item {
+    background: #252525;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 30px 26px 20px 30px;
+}
+
+.recipes__text {
+    font-size: 16px;
+    line-height: 1.87;
+    margin-bottom: 10px;
+}
+
+.recipes__info {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+
+.recipes__inscription {
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 2.5;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    background: rgb(0, 0, 0, 0.3);
+    mix-blend-mode: normal;
+    width: 65px;
+    border-radius: 4px;
+    text-align: center;
+    align-self: center;
+}
+
+.recipes__date {
+    font-size: 12px;
+    line-height: 2.08;
+    color: #B3B3B3;
+    flex-grow: 1;
+}
+
+.recipes__item_background-image{
+    background: url('/img/Main/Recipes/image.png') 0 0/cover no-repeat;
+}
+
+.recipes__item_background-color {
+    background: #34C759;
+}
+
+.recipes__text_color {
+    color: #252525;
+}
+
+.recipes__inscription_bacground {
+    background: #000000;
+}
+
+.recipes__date_color {
+    color: #1A1A1A;
+}
+
+.info_color {
+    color: #1A1A1A;
+}
+
+/* .............................SOCIAL................................................... */
+
+.social {
+    margin-bottom: 120px;
+}
+
+.social__titles {
+    margin-bottom: 60px;
+}
+
+.social__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.social__item {
+    flex: 0 1 350px;
+    display: flex;
+    flex-direction: column;
+    background: #252525;
+    border-radius: 5px;
+    max-height: 330px;
+    overflow: hidden;
+}
+
+.social__header {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    min-height: 88px;
+    padding: 0 25px;
+    margin-bottom: 23px;
+    border-bottom: 2px solid #303030;;
+}
+
+.social__header_margin-border {
+    margin-bottom: 0;
+    border: 0;
+}
+
+.social__network {
+    font-size: 14px;
+    line-height: 2.14;
+    color: #BFBFBF;
+    flex-grow: 1;
+}
+
+.social__button {
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #737373;
+    border-radius: 30px;
+    border: 2px solid #303030;
+    background: #262626;
+    padding: 12px 16px;
+}
+
+.social__body {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 20px 30px;
+    row-gap: 10px;
+}
+
+.social__data {
+    font-size: 14px;
+    line-height: 2.14;
+    color: #737373;
+}
+
+.social__text {
+    font-size: 14px;
+    line-height: 2.14;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.social__name {
+    font-size: 14px;
+    line-height: 2.14;
+    color: #34C759;
+}
+
+.social__image {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 3px;
+}
+
+.social__photo {
+    position: relative;
+    display: flex;
+}
+
+.social__photo::after {
+    content: url('/img/Main/Social/Arow_green.svg');
+    position: absolute;
+    align-self: center;
+    left: 30%;
+    opacity: 0;
+    transition: 0.3s all ease;
+}
+
+.social__photo:hover::after {
+    opacity: 1;
+}
+
+/* .............................FOOTER................................................... */
+
+.footer {
+    padding-top: 30px;
+    background: #252525;
+}
+
+.footer__body {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.footer__contacts {
+    margin-bottom: 30px;
+}
+
+.footer__line {
+    background: #303030;
+    height: 2px;
+}
+
+.logo_new-style {
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+.footer_info {
+    font-size: 12px;
+    line-height: 2.5;
+    text-align: center;
+    color: #737373;
+    margin-bottom: 30px;
+}
+
+
